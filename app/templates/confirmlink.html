@@ -1,0 +1,48 @@
+
+
+{% load static %}
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Sign Up Form by Colorlib</title>
+ 
+     <!-- Font Icon -->
+     <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.css' %}">
+ 
+     <!-- Main css -->
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+ </head>
+ <body>
+
+    <div class="main">
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+           <div class="container">
+               <div class="signin-content">
+                   <div class="signin-image">
+                    <h2>Please confirm your email address to  Login</h2>
+                            <button><a href="{% url 'login' %}">login</a></button>
+                       <figure><img src=" {% static 'images/signin-image.jpg' %} " alt="sing up image"></figure>
+                       <a href=" {% url 'register' %}" class="signup-image-link">Create an account</a>
+                   </div>
+
+                   
+                           <div class="form-group form-button">
+                           </div>
+                       </form>
+                      
+                   </div>
+               </div>
+           </div>
+       </section>
+   </div>
+
+    <!-- JS -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src=" {% static 'js/main.js' %} "></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
